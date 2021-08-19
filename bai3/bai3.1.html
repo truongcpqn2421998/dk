@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let account= prompt('Nhập tài khoản');
+    if (account==='') {
+        account=null
+    }
+    if (account=='Admin') {
+    let pass= prompt('Nhập mật khẩu')
+    if (pass==='') {
+        pass=null
+    }
+        if (pass=='TheMaster') {
+            alert('Welcome')
+        } else if (pass==null) {
+            alert('cancel')
+        }else {
+            alert('Wrong pass')
+        }
+    } else if (account==null) {
+        alert('cancel')
+    } else {
+        alert('I dont Know you')
+    }
+</script>
+</body>
+</html>

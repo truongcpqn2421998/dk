@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let account= prompt('Tên đăng nhập?');
+    if (account==='') {
+       account = null
+    }
+    debugger
+    switch (account){
+        case 'Admin':
+            let pass=prompt('Nhập mật khẩu');
+            if (pass==='') {
+                pass = null
+            }
+            switch (pass) {
+                case 'TheMaster':
+                    alert('Wellcome')
+                    break;
+                case null:
+                    alert('Cancel')
+                    break;
+                default:
+                    alert('Wrong password')
+            }
+        break;
+        case null:
+            alert('cancel')
+        break;
+        default:
+            alert('I dont know you')
+        break;
+    }
+</script>
+</body>
+</html>
