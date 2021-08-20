@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= prompt('Nhập số điện bạn tiêu thụ trong tháng:')
+    let d=0
+    a=parseInt(a);
+    if (a<51) {
+        document.write('Giá điện :1678 đồng/kWWh');
+        d=1678
+
+    }else if (a<101) {
+        document.write('Giá điện :1734 đồng/kWh');
+        d = 1734
+    }else if (a<201) {
+            document.write('Giá điện :2014 đồng/kWh');
+            d=2014
+    } else {
+        document.write('Giá điện: 2536 đồng/kWh');
+        d=2536
+    }
+    let T= null
+    t=parseInt(T)
+    T=d*a
+    document.write('Số tiền phải trả là:' + T)
+</script>
+</body>
+</html>

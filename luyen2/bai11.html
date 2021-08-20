@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt('Nhập số tiền bạn kiếm được trong 1 tháng')
+    a=parseInt(a)
+    let d=null
+    d=parseInt(d)
+    if (a<5000000) {
+        d=0
+    }else if (a<10000000) {
+        d = 5
+    }else if (a<18000000) {
+        d =10
+    }else if (a<32000000) {
+        d=15
+    }else {
+        d=20
+    }
+    T=a*(d/100)
+    T=parseInt(T)
+    document.write('Số tiền thuế bạn phải đóng là: '+T )
+</script>
+</body>
+</html>
