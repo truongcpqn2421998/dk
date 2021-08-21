@@ -14,9 +14,7 @@
   c=parseInt(c)
   let L=null;
   L=parseInt(L)
-  for (i=1;i<=c;i++) {
-    L=a*b
-    a=a+L
+  L=a*Math.pow((1+b/c),(c*c))
   }
   alert(' Tổng số tiền là'+a)
 </script>

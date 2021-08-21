@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập số ngày công:</p>
+<input type="text" id="day">
+<p>lựa chọn bậc lương</p>
+<select id="lv">
+    <option value="A" name="bac">A</option>
+    <option value="B" name="bac">B</option>
+    <option value="C" name="bac">C</option>
+    <option value="D" name="bac">D</option>
+</select>
+<br>
+<input type="button" value="Tính tiền" onclick="tien()">
+<p id="pay"></p>
+<script>
+    function tien() {
+        let a=document.getElementById('day').value;
+        let b=document.getElementById('lv').value;
+        a=parseInt(a)
+        let T=null;
+        T=parseInt(T)
+        switch (b) {
+            case 'A':
+                T=5000000*a/22
+            break;
+            case 'B':
+                T=6000000*a/23
+            break;
+            case  'C':
+                T=8000000*a/23
+            break;
+            case  'D':
+                T=10000000*a/23
+            break;
+        }
+        document.getElementById('pay').innerText='Số tiền lương được nhận là:'+T
+    }
+</script>
+</body>
+</html>

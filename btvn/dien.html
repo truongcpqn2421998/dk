@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Số điện cũ</p>
+<input type="text" id="old" name="số điện">
+<br>
+<p>Số điện mới</p>
+<input type="text" id="new" name="số điện">
+<br>
+<input type="button" value="Tính tiền" onclick="tien()">
+<p id="pay"></p>
+<script>
+    function tien() {
+        let a= document.getElementById('old').value;
+        let b= document.getElementById('new').value;
+        a=parseInt(a)
+        b=parseInt(b)
+        let S=a-b
+        let lv=null
+        lv=parseInt(lv)
+        if (S<51) {
+            lv= 1678
+        } else if (S<101) {
+            lv=1734
+        } else if (S<201) {
+            lv=2014
+        } else if (S<301) {
+            lv=2536
+        } else if (S<401) {
+            lv=2834
+        } else {
+            lv=2927
+        }
+        let P=S*lv
+        document.getElementById('pay').innerText='Số tiền phải trả là:'+P
+    }
+</script>
+</body>
+</html>
