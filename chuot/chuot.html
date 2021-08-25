@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body onload=init()>
 <form>
-    <img id="myImage" alt="rảnh" src="tải%20xuống.jpg" />
+    <img id="myImage" style="position: relative" alt="rảnh" src="tải%20xuống.jpg" />
     <p>Click button below to move the image to right</p>
-    <input type="button" value="Click Me" onclick="moveRight()"/>
+    <input type="button"  value="Click Me" onclick="moveRight()"/>
 </form>
 <script>
     let img
     function init() {
         img = document.getElementById('myImage');
-        img.style.position = 'relative';
         img.style.left = '0px';
     }
     function moveRight() {
         img.style.left = parseInt(img.style.left) + 10 + 'px';
     }
-    window.onload = init;
-
 
 
 </script>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body onload="docReady()">
-<img id="bong" src='tải%20xuống.jpg' style="position:absolute;left:0; top:0;" height="100" width="80"/>
+<body onkeydown=moveSelection(event)>
+<img id="bong" src='tải%20xuống.jpg' style="position:relative;left:0; top:0;" height="100" width="80"/>
 <script>
     function upArrowPressed() {
         let element = document.getElementById('bong');
@@ -39,9 +39,6 @@
                 downArrowPressed();
                 break;
         }
-    }
-    function docReady() {
-        window.addEventListener('keydown', moveSelection);
     }
 </script>
 </body>
